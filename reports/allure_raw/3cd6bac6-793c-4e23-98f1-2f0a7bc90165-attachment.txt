@@ -1,0 +1,9 @@
+[32mINFO    [0m requester.requester:requester.py:104 [92mpytest tests/api/test_pet.py::test_add_pet [0m
+curl -X POST 'https://petstore3.swagger.io/api/v3/pet' \
+-H 'User-Agent: python-requests/2.32.5' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 146' \
+-d '{"id": 1185, "name": "Dog-66", "category": {"id": 1, "name": "Dogs"}, "photoUrls": [], "tags": [{"id": 1, "name": "cate"}], "status": "available"}'

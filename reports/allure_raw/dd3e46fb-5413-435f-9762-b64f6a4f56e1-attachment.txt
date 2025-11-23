@@ -1,0 +1,24 @@
+[32mINFO    [0m requester.requester:requester.py:104 [92mpytest tests/adm/test_adm.py::test_admin_can_create_user (setup)[0m
+curl -X POST 'https://petstore3.swagger.io/api/v3/user' \
+-H 'User-Agent: python-requests/2.32.5' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 65' \
+-d '{"username": "admin", "password": "password", "roles": ["admin"]}' 
+
+[32mINFO    [0m requester.requester:requester.py:113 	RESPONSE:
+STATUS: [91m500[0mDATA: [91m{"code":500,"message":"There was an error processing your request. It has been logged (ID: 70c360b327f465c4)"}[0m
+[32mINFO    [0m requester.requester:requester.py:104 [92mpytest tests/adm/test_adm.py::test_admin_can_create_user [0m
+curl -X POST 'https://petstore3.swagger.io/api/v3/user' \
+-H 'User-Agent: python-requests/2.32.5' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 52' \
+-d '{"username": "new_user", "email": "new@example.com"}' 
+
+[32mINFO    [0m requester.requester:requester.py:113 	RESPONSE:
+STATUS: [91m500[0mDATA: [91m{"code":500,"message":"There was an error processing your request. It has been logged (ID: 8dd1ad217067080c)"}[0m

@@ -1,0 +1,12 @@
+[32mINFO    [0m requester.requester:requester.py:104 [92mpytest tests/api/test_register.py::test_creat_user [0m
+curl -X POST 'https://petstore3.swagger.io/api/v3/user' \
+-H 'User-Agent: python-requests/2.32.5' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 180' \
+-d '{"id": 42821, "username": "user42821", "firstName": "Test", "lastName": "User", "email": "user42821@example.com", "password": "password123", "phone": "1234567890", "userStatus": 1}' 
+
+[32mINFO    [0m requester.requester:requester.py:113 	RESPONSE:
+STATUS: [91m500[0mDATA: [91m{"code":500,"message":"There was an error processing your request. It has been logged (ID: baae66a6a9925baa)"}[0m
